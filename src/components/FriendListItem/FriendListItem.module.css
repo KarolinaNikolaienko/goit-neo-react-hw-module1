@@ -1,6 +1,16 @@
 .friendListItem {
     border: 1px solid black;
     border-radius: 5px;
+    width: 80px;
+    padding: 10px;
+}
+
+.friendName {
+    font-size: 18px;
+}
+
+.status {
+    font-size: 14px;
 }
 
 .offline {

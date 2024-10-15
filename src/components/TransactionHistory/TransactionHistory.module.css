@@ -1,3 +1,42 @@
-.table {
+:root {
+    --table-cell-width: 200px;
+}
+
+table, th, td {
     border: 1px solid black;
+    font-size: 18px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    width: var(--table-cell-width);
+    height: 40px;
+}
+
+th {
+    background-color: #242424;
+    color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #d1d1d1;
+}
+
+.table {
+    margin: auto;
+}
+
+.typeText {
+    display: block;
+    width: calc(var(--table-cell-width) / 2);
+    text-align: left;
+    text-transform: capitalize;
+    margin: auto;
 }
